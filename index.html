@@ -1,50 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lesson</title>
 </head>
+
 <body>
 
- <a href="https://facebook.com/profile/3243897983748923437482374y2347892347" class="url"></a><br><br>
- <a href="https://amazon.com/profile/3243897983748923437482374y2347892347" class="url"></a><br><br>
- <a href="https://google.com/profile/3243897983748923437482374y2347892347" class="url"></a><br><br>
- <a href="https://node.com/profile/3243897983748923437482374y2347892347" class="url"></a><br><br>
- <a href="https://npmjs.org/profile/3243897983748923437482374y2347892347" class="url"></a><br><br>
- <a href="https://aws.com/profile/3243897983748923437482374y2347892347" class="url"></a><br><br>
- <a href="https://cpanel.com/profile/3243897983748923437482374y2347892347" class="url"></a><br><br>
- <a href="https://firebase.com/profile/3243897983748923437482374y2347892347" class="url"></a><br><br>
- <a href="https://github.com/profile/3243897983748923437482374y2347892347" class="url"></a><br><br>
- <a href="https://stackoverflow.com/profile/3243897983748923437482374y2347892347" class="url"></a><br><br>
- <a href="https://web.whatsapp.com/profile/3243897983748923437482374y2347892347" class="url"></a><br><br>
+    <a href="https://facebook.com/profile/3243897983748923437482374y2347892347" class="url"></a><br><br>
+    <a href="https://amazon.com/profile/3243897983748923437482374y2347892347" class="url"></a><br><br>
+    <a href="https://google.com/profile/3243897983748923437482374y2347892347" class="url"></a><br><br>
+    <a href="https://node.com/profile/3243897983748923437482374y2347892347" class="url"></a><br><br>
+    <a href="https://npmjs.org/profile/3243897983748923437482374y2347892347" class="url"></a><br><br>
+    <a href="https://aws.com/profile/3243897983748923437482374y2347892347" class="url"></a><br><br>
+    <a href="https://cpanel.com/profile/3243897983748923437482374y2347892347" class="url"></a><br><br>
+    <a href="https://firebase.com/profile/3243897983748923437482374y2347892347" class="url"></a><br><br>
+    <a href="https://github.com/profile/3243897983748923437482374y2347892347" class="url"></a><br><br>
+    <a href="https://stackoverflow.com/profile/3243897983748923437482374y2347892347" class="url"></a><br><br>
+    <a href="https://web.whatsapp.com/profile/3243897983748923437482374y2347892347" class="url"></a><br><br>
 
- <script>
-     let urls = document.querySelectorAll(".url");
+    <script>
+        let urls = document.querySelectorAll(".url");
 
-// function shorten(string, limit) {
-//   if (string.length > limit) {
-//     return string.substring(0, limit) + "..."
-//   } else {
-//     return string
-//   }
-// }
-    //  urls.forEach(url =>{
-    //   url.innerHTML = shorten(url.href,20)
+        function shorten(string, limit) {
+            if (string.length > limit) {
+                return string.substring(0, limit) + "..."
+            } else {
+                return string
+            }
+        }
+        urls.forEach(url => {
+            url.innerHTML = shorten(url.href, 20)
 
-    //  })
-
-
-// OR USE THIS SHORTCUT
-
-urls.forEach(url =>{
-      url.innerHTML = url(url.href,20)
-
-     })
+        })
 
 
-     
- </script>
+        // OR USE THIS SHORTCUT
+
+        // urls.forEach(url => {
+        //     url.innerHTML = url.href.substr(url.href, 20)
+
+        // })
+
+
+
+    </script>
 </body>
+
 </html>
